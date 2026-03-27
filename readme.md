@@ -10,3 +10,8 @@ For a project skill, specific to a single repository, store under `.github/skill
 For personal skills, shared across all projects, store under `~/.copilot/skills` or `~/.claude/skills` (i.e. `C:\Users\timh\.copilot\skills`).
 
 See documentation on your particular agent tool for further instructions, like [this for GitHub Copilot](https://docs.github.com/en/copilot/how-tos/copilot-cli/customize-copilot/create-skills) for example.
+
+### Example
+So, if you wanted to use the [msx](./msx/) skill across all projects for example, you would:
+1. Clone this repo
+2. Place the [msx](./msx/) folder directly under `C:\Users\<USER>\.copilot\skills`.
