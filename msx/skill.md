@@ -40,307 +40,20 @@ Save the cookie:
 msx auth set "<cookie_value>"
 ```
 
-## Commands
+## Step 4: Use the MSX CLI to interface with MSX!
+You have read the most up-to-date readme for the MSX CLI tool, so you should know how to use the commands in the CLI tool and the expected outputs. Use them accordingly to achieve the user's desired goals or answer questions, even if that means chaining many together.
 
-All API commands return **JSON output** to stdout. Errors go to stderr with exit code 1.
-
----
-
-### Identity
-
-```bash
-msx whoami
-```
-
-Returns the current user's Dynamics 365 system user GUID as a plain string. Use this when you need the user's ID for other commands (e.g., `opps user`).
-
----
-
-### Search Users
-
-```bash
-msx users "<name>"
-```
-
-Searches users by full name (partial, case-insensitive match). Returns a JSON array of user objects with fields: `fullname`, `title`, `internalemailaddress`, `msp_solutionarea`, `msp_rolesummary`, `msp_salesdistrictname`, `msp_solutionareadetails`, `msp_qualifier2`.
-
-Example:
-
-```bash
-msx users "Jane Smith"
-```
-
----
-
-### Search Accounts
-
-```bash
-msx accounts "<search_term>"
-```
-
-Searches accounts by name (partial match). Returns a JSON array with `name` and `accountid` for each match.
-
-Example:
-
-```bash
-msx accounts "Contoso"
-```
-
-Use the returned `accountid` with `msx opps search` to find opportunities under that account.
-
-*TIP: U.S. State & Local Government accounts often follow a naming convention like `TX-State Government` or `NM-State Government` or `CA-COUNTY OF LOS ANGELES`. Start your search with terms like these.*
-
----
-
-### Opportunities
-
-Three subcommands for working with opportunities:
-
-#### Search by Account
-
-```bash
-msx opps search "<account_id>" "<search_term>"
-```
-
-Finds open opportunities under a specific account by title (partial match). Returns `opportunityid`, `name`, `description`, `estimatedvalue`.
-
-Typical workflow: first run `msx accounts` to get the account ID, then search its opportunities.
-
-Example returned response:
-```
-[
-  {
-    "opportunityid": "b912f4aa-45c1-ee11-9f22-44d2a1c0f7b1",
-    "name": "AURELION GOV | Dept. of Sky Transit | Cloud Workflow Suite",
-    "description": "Modernizing aerial traffic request processing for the Sky Transit Authority",
-    "estimatedvalue": 187500.0
-  },
-  {
-    "opportunityid": "7f33c1d9-88b2-ee11-82c1-12f4b9e0a3c2",
-    "name": "NOVA MUNICIPAL | Office of Arcology Services | DataHub Automation",
-    "description": "Implementing automated data routing for vertical-city infrastructure",
-    "estimatedvalue": 62400.0
-  },
-  {
-    "opportunityid": "e2a4d0f1-19e3-ee11-9a11-55c2d4f8b9a7",
-    "name": "KINGDOM OF VELORA | Ministry of Resource Harmony | Platform Revamp",
-    "description": "Revamping digital systems for inter‑region resource allocation",
-    "estimatedvalue": 402300.0
-  },
-  {
-    "opportunityid": "c4f1a2e8-55d9-ee11-8c77-09f1e2a4c7d3",
-    "name": "CITY OF LUMENFALL | Civic Innovation Bureau | Process Automation",
-    "description": "Automating permit workflows for the Lumenfall Innovation District",
-    "estimatedvalue": 11250.0
-  }
-]
-```
-
-#### My Opportunities
-
-```bash
-msx opps mine
-```
-
-Gets all open opportunities where the authenticated user is a deal team member. Returns `opportunityid`, `name`, `description`, `value`, `closeDate`, and the parent `account` (`id`, `name`).
-
-#### User's Opportunities
-
-```bash
-msx opps user "<system_user_id>"
-```
-
-Same as `opps mine` but for any user. Get a user's system ID from `msx whoami` or `msx users`.
-
-#### Example Response from `msx opps`
-```
-[
-  {
-    "opportunityid": "f91c2b77-aa12-ee11-9c44-55d2f8c1a9e3",
-    "name": "AURELION JUSTICE AUTHORITY – Platform Modernization Initiative",
-    "description": "Exploring a unified low‑code platform to streamline case workflows across the agency.",
-    "value": 86450.0,
-    "closeDate": "2026-08-27",
-    "account": {
-      "id": "1c7eab44-22d1-4f8b-9b11-8a0c4f77d9e1",
-      "name": "AURELION FEDERAL SERVICES"
-    },
-    "forecastComments": [
-      {
-        "userId": "{A1B2C3D4-1111-2222-3333-444455556666}",
-        "modifiedOn": "6/15/2023, 10:12:33 PM",
-        "comment": "Initial discussions with AJA leadership about adopting a platform-wide low‑code solution. Team preparing early value assessment."
-      },
-      {
-        "userId": "{A1B2C3D4-1111-2222-3333-444455556666}",
-        "modifiedOn": "10/25/2023, 6:39:18 PM",
-        "comment": "Left message with AJA tech lead to re-engage on modernization roadmap."
-      },
-      {
-        "userId": "{DDEE1122-3344-5566-7788-99AABBCCDDEE}",
-        "modifiedOn": "12/21/2023, 7:32:58 AM",
-        "comment": "Funding tied to a separate modernization grant. Opportunity moved to Q1 for alignment."
-      },
-      {
-        "userId": "{A1B2C3D4-1111-2222-3333-444455556666}",
-        "modifiedOn": "8/23/2024, 5:21:36 PM",
-        "comment": "Customer noncommittal on timing. Requested clarity on whether purchase aligns with next fiscal cycle."
-      }
-    ]
-  },
-  {
-    "opportunityid": "c8e4a0b1-cc44-ee11-8f77-11aa22bb33cc",
-    "name": "LUMENFALL CHILD SERVICES – Low‑Code Enablement Program",
-    "description": "Agency exploring structured development environments and governance for 1,200 internal users.",
-    "value": 189300.0,
-    "closeDate": "2026-08-08",
-    "account": {
-      "id": "1c7eab44-22d1-4f8b-9b11-8a0c4f77d9e1",
-      "name": "AURELION FEDERAL SERVICES"
-    },
-    "forecastComments": [
-      {
-        "userId": "{A1B2C3D4-1111-2222-3333-444455556666}",
-        "modifiedOn": "7/27/2023, 10:29:15 AM",
-        "comment": "Initial workshop held with LCS leadership. Strong interest in governance, ALM, and environment strategy."
-      },
-      {
-        "userId": "{A1B2C3D4-1111-2222-3333-444455556666}",
-        "modifiedOn": "12/11/2024, 2:51:29 AM",
-        "comment": "Coordinating with internal engineering to schedule follow‑up enablement session."
-      },
-      {
-        "userId": "{99887766-5544-3322-1100-AABBCCDDEEFF}",
-        "modifiedOn": "3/11/2025, 3:08:13 PM",
-        "comment": "Partner engagement deferred until agency direction becomes clearer."
-      },
-      {
-        "userId": "{A1B2C3D4-1111-2222-3333-444455556666}",
-        "modifiedOn": "6/16/2025, 12:35:08 PM",
-        "comment": "No recent movement. Pushing opportunity out until customer re-engages."
-      }
-    ]
-  }
-]
-```
-
-### Tasks
-
-#### List My Recent Tasks
-
-```bash
-msx tasks
-```
-
-Returns the user's most recent tasks (up to 150), ordered by scheduled start date descending. Each task includes `subject`, `description`, `scheduledstart`, and optionally a `regarding` object with the linked account or opportunity (`type`, `name`, `id`).
-
-Example response:
-```
-[
-  {
-    "subject": "Aurelion Digital Forum – AI Agents Spotlight",
-    "description": "Featured guest on the ADF’s tech broadcast with host Jalen Rho, presenting an overview of autonomous agent models.",
-    "scheduledstart": "2025-10-21T15:00:00Z",
-    "regarding": {
-      "type": "account",
-      "name": "AURELION CENTRAL ADMINISTRATION",
-      "id": "9a22c1f3-55d1-4b8a-9c11-1f77a8c4e2b9"
-    }
-  },
-  {
-    "subject": "Nexora Platform Integration Discovery",
-    "description": "Met with Nexora Systems to explore requirements for integrating Copilot‑style orchestration into their modular platform.",
-    "scheduledstart": "2025-10-21T15:00:00Z",
-    "regarding": {
-      "type": "account",
-      "name": "NEXORA SYSTEMS",
-      "id": "c4b1d2e8-7f44-4d9a-8f22-0a9c55e1b7d3"
-    }
-  },
-  {
-    "subject": "Technical Architecture Review with SolaraGrid",
-    "description": "Walked through solution architecture with the SolaraGrid engineering team, addressed technical questions, and aligned on next steps.",
-    "scheduledstart": "2025-10-20T07:00:00Z",
-    "regarding": {
-      "type": "opportunity",
-      "name": "AURELION | SOLARAGRID | AI | Intelligent Support & Protocol Navigator",
-      "id": "b2d4e8f1-6a11-4c0d-9f77-2c1e5b9d7a44"
-    }
-  }
-]
-```
-
-#### Create a Task
-
-```bash
-msx tasks create "<title>" "<description>" "<date>" [--category <category>] [--account <id>] [--opportunity <id>]
-```
-
-| Argument | Required | Description |
-|---|---|---|
-| `<title>` | Yes | Task subject |
-| `<description>` | Yes | Task description |
-| `<date>` | Yes | Scheduled start date, format: `yyyy-MM-dd` |
-| `--category <category>` | No | Task category (see table below) |
-| `--account <id>` | No | Link task to an account by GUID |
-| `--opportunity <id>` | No | Link task to an opportunity by GUID |
-
-Only one of `--account` or `--opportunity` can be used. If both are provided, account takes precedence.
-
-#### Task Categories
-
-| Value | Name |
-|---|---|
-| 606820000 | ACE |
-| 606820001 | CrossSegment |
-| 606820002 | CrossWorkload |
-| 606820003 | PostSales |
-| 606820004 | TechSupport |
-| 606820005 | TechnicalCloseWinPlan |
-| 861980000 | CustomerEngagement |
-| 861980001 | Workshop |
-| 861980002 | Demo |
-| 861980003 | NegotiatePricing |
-| 861980004 | ArchitectureDesignSession |
-| 861980005 | PoCPilot |
-| 861980006 | BlockerEscalation |
-| 861980007 | ConsumptionPlan |
-| 861980008 | Briefing |
-| 861980009 | RFPRFI |
-| 861980010 | CallBackRequested |
-| 861980011 | NewPartnerRequest |
-| 861980012 | Internal |
-| 861980013 | ExternalCoCreationOfValue |
-
-Examples:
-
-```bash
-# Standalone task (no category)
-msx tasks create "Call customer" "Discuss Q3 renewal" 2026-04-01
-
-# Task with a category
-msx tasks create "Follow up call" "Discuss renewal timeline" 2026-04-01 --category CustomerEngagement
-
-# Tied to an account with a category
-msx tasks create "Prep for meeting" "Review history" 2026-04-01 --category CustomerEngagement --account "b1c2d3e4-5678-90ab-cdef-1234567890ab"
-
-# Tied to an opportunity with a category
-msx tasks create "Send proposal" "Draft SOW" 2026-04-05 --category Demo --opportunity "a9b8c7d6-5432-10fe-dcba-0987654321ab"
-```
-
-Prints `Task created.` on success.
-
----
+## Guidance
+Below is some guidance on best practices in using the MSX CLI tool and common workflows.
 
 ### Raw OData Query
+If you don't feel any of the existing MSX CLI functions are adequate to satisfy a particular request, a powerful alternative to turn to is the `query` command. This allows you to runs any **OData query** against the Dynamics 365 API (`https://microsoftsales.crm.dynamics.com/api/data/v9.2/`). Only provide the path and query parameters, the base URL is added automatically.
 
 ```bash
 msx query "<odata_query>"
 ```
 
-Runs any OData query against the Dynamics 365 API (`https://microsoftsales.crm.dynamics.com/api/data/v9.2/`). Only provide the path and query parameters — the base URL is added automatically.
-
-Returns the `value` array from the API response as formatted JSON.
+It will return the `value` array from the API response as formatted JSON.
 
 Example:
 
@@ -350,26 +63,19 @@ msx query "contacts?\$top=5&\$select=fullname,emailaddress1"
 
 **Note:** Escape `$` characters in shells that interpret them (e.g., use `\$` in bash).
 
----
-
-## Common Workflows
-
-### Find a colleague's opportunities
-
+### Common Workflow: Find a colleague's opportunities
 ```bash
 msx users "Jane Smith"          # Get their systemuserid
 msx opps user "<user_id>"       # List their open opportunities
 ```
 
-### Log a task against an account
-
+### Common Workflow: Log a task against an account
 ```bash
 msx accounts "Contoso"          # Get the accountid
 msx tasks create "Follow up" "Discuss renewal" 2026-04-01 --category CustomerEngagement --account "<account_id>"
 ```
 
-### Explore an account's opportunities
-
+### Common Workflow: Explore an account's opportunities
 ```bash
 msx accounts "Fabrikam"                          # Get accountid
 msx opps search "<account_id>" "Azure"           # Search open opps
@@ -391,8 +97,11 @@ In this scenario, find the Sales Executive by searching through users, then pull
 - Yellow = opportunity is stale or has shown challenging signs in forecast comments.
 - Red = opportunity is progressing poorly. Forecast comments have not been added for some time or they are trending negatively.
 
-## Error Handling
+### Error Handling
 - Exit code `0` = success. Exit code `1` = error.
 - All errors are written to stderr.
 - HTTP errors from MSX include the status code and response body in the error message.
 - If you see 401/403 errors, the cookie has expired — ask the user for a new one.
+
+### Other Tips
+U.S. State & Local Government accounts often follow a naming convention like `TX-State Government` or `NM-State Government` or `CA-COUNTY OF LOS ANGELES`. Start your search with terms like these.
