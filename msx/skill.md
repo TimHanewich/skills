@@ -8,7 +8,16 @@ compatibility: "Requires .NET 10+ runtime. The `msx` CLI must be installed as a 
 
 A CLI tool for interfacing with MSX (Microsoft's internal CRM / Dynamics 365). Every operation is a single `msx` command — no interactive mode.
 
-**IMPORTANT: Before proceeding, read the documentation on the project's main `readme.md` file on GitHub via your `web_fetch` tool: https://github.com/TimHanewich/MSX**
+The method that you will use to interface with MSX is via the `MSX.exe` CLI tool.
+
+## Before you do anything
+THIS IS VERY IMPORTANT!
+1. Before you do anything, read the documentation of the MSX.exe tool using your `web_fetch` tool, found here: https://raw.githubusercontent.com/TimHanewich/MSX/refs/heads/master/readme.md
+2. Run `msx` in the terminal to check if the user has the MSX CLI tool installed.
+  - If they do NOT have it installed, let them know of this and offer to install it for them. If they say yes they want to install it (or are unreachable), install it for them by downloading the most recent version of `MSX.exe` found in the project readme you read above.
+3. Run `msx version` to validate it is installed and check the version. If the version they have is not the most recent one specified in the readme, note this to the user. Ask them if they want you to download the most recent version. If the user is not reachable, just leave it, no need to download the latest version, proceed with the version you have.
+  - If they DO want to download the latest version, run `where msx` to see where MSX is installed on the user's PC. Download the latest version and then be sure to completely replace the old MSX.exe with the new one. Then run `msx version` again to validate it installed correctly and you now have the latest one.
+4. Proceed with the steps below, starting first with authentication!
 
 ## Authentication
 
