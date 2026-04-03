@@ -272,7 +272,7 @@ Example response:
 #### Create a Task
 
 ```bash
-msx tasks create "<title>" "<description>" "<date>" [--account <id>] [--opportunity <id>]
+msx tasks create "<title>" "<description>" "<date>" [--category <category>] [--account <id>] [--opportunity <id>]
 ```
 
 | Argument | Required | Description |
@@ -280,22 +280,51 @@ msx tasks create "<title>" "<description>" "<date>" [--account <id>] [--opportun
 | `<title>` | Yes | Task subject |
 | `<description>` | Yes | Task description |
 | `<date>` | Yes | Scheduled start date, format: `yyyy-MM-dd` |
+| `--category <category>` | No | Task category (see table below) |
 | `--account <id>` | No | Link task to an account by GUID |
 | `--opportunity <id>` | No | Link task to an opportunity by GUID |
 
 Only one of `--account` or `--opportunity` can be used. If both are provided, account takes precedence.
 
+#### Task Categories
+
+| Value | Name |
+|---|---|
+| 606820000 | ACE |
+| 606820001 | CrossSegment |
+| 606820002 | CrossWorkload |
+| 606820003 | PostSales |
+| 606820004 | TechSupport |
+| 606820005 | TechnicalCloseWinPlan |
+| 861980000 | CustomerEngagement |
+| 861980001 | Workshop |
+| 861980002 | Demo |
+| 861980003 | NegotiatePricing |
+| 861980004 | ArchitectureDesignSession |
+| 861980005 | PoCPilot |
+| 861980006 | BlockerEscalation |
+| 861980007 | ConsumptionPlan |
+| 861980008 | Briefing |
+| 861980009 | RFPRFI |
+| 861980010 | CallBackRequested |
+| 861980011 | NewPartnerRequest |
+| 861980012 | Internal |
+| 861980013 | ExternalCoCreationOfValue |
+
 Examples:
 
 ```bash
-# Standalone task
+# Standalone task (no category)
 msx tasks create "Call customer" "Discuss Q3 renewal" 2026-04-01
 
-# Tied to an account
-msx tasks create "Prep for meeting" "Review history" 2026-04-01 --account "b1c2d3e4-5678-90ab-cdef-1234567890ab"
+# Task with a category
+msx tasks create "Follow up call" "Discuss renewal timeline" 2026-04-01 --category CustomerEngagement
 
-# Tied to an opportunity
-msx tasks create "Send proposal" "Draft SOW" 2026-04-05 --opportunity "a9b8c7d6-5432-10fe-dcba-0987654321ab"
+# Tied to an account with a category
+msx tasks create "Prep for meeting" "Review history" 2026-04-01 --category CustomerEngagement --account "b1c2d3e4-5678-90ab-cdef-1234567890ab"
+
+# Tied to an opportunity with a category
+msx tasks create "Send proposal" "Draft SOW" 2026-04-05 --category Demo --opportunity "a9b8c7d6-5432-10fe-dcba-0987654321ab"
 ```
 
 Prints `Task created.` on success.
@@ -335,7 +364,7 @@ msx opps user "<user_id>"       # List their open opportunities
 
 ```bash
 msx accounts "Contoso"          # Get the accountid
-msx tasks create "Follow up" "Discuss renewal" 2026-04-01 --account "<account_id>"
+msx tasks create "Follow up" "Discuss renewal" 2026-04-01 --category CustomerEngagement --account "<account_id>"
 ```
 
 ### Explore an account's opportunities
