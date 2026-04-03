@@ -8,7 +8,7 @@ compatibility: "Requires .NET 10+ runtime. The `msx` CLI must be installed as a 
 
 A CLI tool for interfacing with MSX (Microsoft's internal CRM / Dynamics 365). Every operation is a single `msx` command — no interactive mode.
 
-Before proceeding, read the documentation on the project's main `readme.md` file on GitHub: https://github.com/TimHanewich/MSX
+**IMPORTANT: Before proceeding, read the documentation on the project's main `readme.md` file on GitHub via your `web_fetch` tool: https://github.com/TimHanewich/MSX**
 
 ## Authentication
 
