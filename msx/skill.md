@@ -10,26 +10,28 @@ A CLI tool for interfacing with MSX (Microsoft's internal CRM / Dynamics 365). E
 
 The method that you will use to interface with MSX is via the `MSX.exe` CLI tool.
 
-## Before you do anything
-THIS IS VERY IMPORTANT!
-1. Before you do anything, read the documentation of the MSX.exe tool using your `web_fetch` tool, found here: https://raw.githubusercontent.com/TimHanewich/MSX/refs/heads/master/readme.md
-2. Run `msx` in the terminal to check if the user has the MSX CLI tool installed.
+## STEP 1: READ MSX CLI DOCUMENTATION
+**THIS IS VERY IMPORTANT!**
+
+Before you do anything, read the documentation of the MSX.exe tool using your `web_fetch` tool, found here: https://raw.githubusercontent.com/TimHanewich/MSX/refs/heads/master/readme.md
+
+## Step 2: Validate MSX CLI
+- Run `msx` in the terminal to check if the user has the MSX CLI tool installed.
   - If they do NOT have it installed, let them know of this and offer to install it for them. If they say yes they want to install it (or are unreachable), install it for them by downloading the most recent version of `MSX.exe` found in the project readme you read above.
-3. Run `msx version` to validate it is installed and check the version. If the version they have is not the most recent one specified in the readme, note this to the user. Ask them if they want you to download the most recent version. If the user is not reachable, just leave it, no need to download the latest version, proceed with the version you have.
+- Run `msx version` to validate it is installed and check the version. If the version they have is not the most recent one specified in the readme, note this to the user. Ask them if they want you to download the most recent version. If the user is not reachable, just leave it, no need to download the latest version, proceed with the version you have.
   - If they DO want to download the latest version, run `where msx` to see where MSX is installed on the user's PC. Download the latest version and then be sure to completely replace the old MSX.exe with the new one. Then run `msx version` again to validate it installed correctly and you now have the latest one.
-4. Proceed with the steps below, starting first with authentication!
 
-## Authentication
-
+## Step 3: Validate Authentication
 The CLI authenticates via a browser cookie stored locally. **All API commands will fail if no cookie is saved.**
 
-Before doing anything, check if a cookie is already set:
+Now check if a cookie is already set:
 
 ```bash
-msx auth show
+msx auth check
 ```
 
-- If this prints a cookie value, authentication is ready.
+This will confirm if they have already set a cookie.
+
 - If it errors with `No cookie saved`, ask the user to provide their MSX cookie. They can grab it from their browser DevTools (Network tab → any request to `microsoftsales.crm.dynamics.com` → `cookie` request header).
 
 Save the cookie:
@@ -37,16 +39,6 @@ Save the cookie:
 ```bash
 msx auth set "<cookie_value>"
 ```
-
-Other auth commands:
-
-| Command | Description |
-|---|---|
-| `msx auth show` | Print the saved cookie |
-| `msx auth path` | Print the file path where the cookie is stored |
-| `msx auth clear` | Delete the saved cookie |
-
-If an API command fails with an HTTP error (401/403), the cookie has likely expired. Ask the user for a fresh one.
 
 ## Commands
 
