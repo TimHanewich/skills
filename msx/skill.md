@@ -374,8 +374,23 @@ msx accounts "Fabrikam"                          # Get accountid
 msx opps search "<account_id>" "Azure"           # Search open opps
 ```
 
-## Error Handling
+### Logging "HVAs"
+A request you may receive is to log "High Value Activities", or "HVA's" for the user. This is a term some teams at Microsoft use to describe to their high-impact activities that they log in MSX as tasks. If a user inquires about their HVAs or asks to log an HVA, just know it is the task table they are referring to.
 
+- When the user provides information to you about an HVA (task) for you to log, it is usually quite important that you tie it to an account or an opportunity.
+- Do you best to determine what it should be tied to based on context clues. Perhaps they were discussing an opportunity or an account earlier in the conversation that it the HVA belongs to.
+- If you can't immediately infer what the account or opportunity the task should be tied to, you can try to find it by searching through accounts and then searching through opportunities for accounts of interst you found. Use your best judgement in beginning your search. If you are quite lost and it isn't obvious where to begin searching, ask the user for clarification.
+- You will work with all sorts of users. One of the users you are working with may be a Solution Engineer (a technical sales person). If so, they are working in close partnership with a Sales Executive. If they provide the name of the Sales Executive they work with, find the opportunities that Sales Executive has logged: first search users for them, then get a list of their opportunities, then try to find whichever opportunity in that list is right.
+
+### Opportunity Updates
+Another user you may work with is the manager of Sales Executives. This type of user cares most about getting high-level health checks of the opportunities that a particular Sales Executive on their team is working on. 
+
+In this scenario, find the Sales Executive by searching through users, then pull a list of their opportunities. The Sales Executive Manager cares most about the recent forecast comments of the high-value opportunities in the Sales Executive pipeline. Be sure to provide the latest information and health assessment on each opportunity as this will be most important. In fact, infer the health of each opportunity as green, yellow, or red.
+- Green = opportunity is progressing well. Forecast comments are recent and indicate positive progress towards deal close by predicted close date.
+- Yellow = opportunity is stale or has shown challenging signs in forecast comments.
+- Red = opportunity is progressing poorly. Forecast comments have not been added for some time or they are trending negatively.
+
+## Error Handling
 - Exit code `0` = success. Exit code `1` = error.
 - All errors are written to stderr.
 - HTTP errors from MSX include the status code and response body in the error message.
