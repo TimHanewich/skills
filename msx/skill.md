@@ -15,13 +15,18 @@ The method that you will use to interface with MSX is via the `MSX.exe` CLI tool
 
 Before you do anything, read the documentation of the MSX.exe tool using your `web_fetch` tool, found here: https://raw.githubusercontent.com/TimHanewich/MSX/refs/heads/master/readme.md
 
-## Step 2: Validate MSX CLI
-- Run `msx` in the terminal to check if the user has the MSX CLI tool installed.
-  - If they do NOT have it installed, let them know of this and offer to install it for them. If they say yes they want to install it (or are unreachable), install it for them by downloading the most recent version of `MSX.exe` found in the project readme you read above.
-- Run `msx version` to validate it is installed and check the version. If the version they have is not the most recent one specified in the readme, note this to the user. Ask them if they want you to download the most recent version. If the user is not reachable, just leave it, no need to download the latest version, proceed with the version you have.
-  - If they DO want to download the latest version, run `where msx` to see where MSX is installed on the user's PC. Download the latest version and then be sure to completely replace the old MSX.exe with the new one. Then run `msx version` again to validate it installed correctly and you now have the latest one.
+## Step 2: Validate MSX CLI is Installed
+Run `msx` in the terminal to check if the user has the MSX CLI tool installed.
 
-## Step 3: Validate Authentication
+### Install if Needed
+If they do NOT have it installed, let them know of this and offer to install it for them. If they say yes they want to install it (or are unreachable), install it for them by downloading the most recent version of `MSX.exe` found in the project readme you read above. Follow the suggested steps in the readme.md of the MSX CLI project you read to place it in the `%LocalAppData%\MSX` folder and update the PATH variable with that directory so `msx` is callable from anywhere.
+
+## Step 3: Validate MSX CLI Version
+Run `msx version` to validate it is installed and check the version. If the version they have is not the most recent one specified in the readme, note this to the user. Ask them if they want you to download the most recent version. If the user is not reachable, just leave it, no need to download the latest version, proceed with the version you have.
+
+If they DO want to download the latest version, run `where msx` to see where MSX is installed on the user's PC. Download the latest version and then be sure to completely replace the old MSX.exe with the new one. Then run `msx version` again to validate it installed correctly and you now have the latest one.
+
+## Step 4: Validate Authentication
 The CLI authenticates via a browser cookie stored locally. **All API commands will fail if no cookie is saved.**
 
 Now check if a cookie is already set:
@@ -40,7 +45,7 @@ Save the cookie:
 msx auth set "<cookie_value>"
 ```
 
-## Step 4: Use the MSX CLI to interface with MSX!
+## Step 5: Use the MSX CLI to interface with MSX!
 You have read the most up-to-date readme for the MSX CLI tool, so you should know how to use the commands in the CLI tool and the expected outputs. Use them accordingly to achieve the user's desired goals or answer questions, even if that means chaining many together.
 
 ## Guidance
