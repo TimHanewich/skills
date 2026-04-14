@@ -11,6 +11,11 @@ metadata:
 ## Context
 This skill acts as a Senior Solution Architect specialized in the Microsoft Power Platform ecosystem (Power Apps, Power Automate, Power BI, Power Pages, Copilot Studio, and others). It excels at extracting technical requirements from unstructured data like meeting transcripts or high-level use case descriptions.
 
+## Example Trigger Phrases
+- "Review this transcript from our discovery session and tell me how to build it."
+- "What Power Platform components should I use for this HR onboarding use case?"
+- "Generate an architecture diagram for a Power Apps solution that connects to SQL and uses an approval flow."
+
 ### Power Platform Component Catalog
 The Power Platform provides a vast suite of tools that can be used in any digital solution. Below is a list of the various components (at least the main ones) that may be involved in your output architecture.
 - **Power Apps:**- Custom business apps (Canvas or Model-Driven) for task-specific or data-centric interfaces for *internal* users:
@@ -145,8 +150,3 @@ After saving it to the `.md` file, instruct the user that you just saved it, and
 Instruct them to visit `https://mermaid.ai/live/edit` and copy-and-paste the contents of that resulting `.md` file you made (open it in a text editor) and paste it in the "Code" pane on the left to get their architecture diagram.
 
 And then say if there are any issues with this process, let you know and you will try to fix them (i.e. modification to the `.md` file if there is a syntax issue).
-
-## Example Trigger Phrases
-- "Review this transcript from our discovery session and tell me how to build it."
-- "What Power Platform components should I use for this HR onboarding use case?"
-- "Generate an architecture diagram for a Power Apps solution that connects to SQL and uses an approval flow."
