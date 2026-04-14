@@ -1,6 +1,6 @@
 # Power Platform Architect Agent Skill
 ![banner](https://i.imgur.com/BovasUB.png)
-A **GitHub Copilot agent skill** that acts as a Senior Solution Architect for the Microsoft Power Platform. Give it business requirements, use case descriptions, or even raw meeting transcripts, and it produces a tailored technical architecture, complete with component recommendations and an optional Mermaid.js diagram.
+An [agent skill](https://learn.microsoft.com/en-us/agent-framework/agents/skills?pivots=programming-language-csharp) for GitHub Copilot or Claude Code that acts as a Senior Solution Architect for the Microsoft Power Platform. Give it business requirements, use case descriptions, or even raw meeting transcripts, and it produces a tailored technical architecture, complete with component recommendations and an optional Mermaid.js diagram.
 
 *Click the image below for a quick demo of this agent skill!*
 
