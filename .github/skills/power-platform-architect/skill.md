@@ -50,6 +50,7 @@ The Power Platform provides a vast suite of tools that can be used in any digita
   - **Prediction (Custom):** Analyzes historical Dataverse records to predict binary (yes/no) or numerical outcomes (e.g., credit risk or project delays).
 - **Dataverse:**- The primary data platform for the Power Platform ecosystem. Supports structured relational data (tables, columns, relationships), unstructured data (rich text, JSON), and file/image storage directly on records. Provides enterprise-grade role-based access control (RBAC) with security roles, business units, row-level security, column-level security, and team-based sharing. Built for performance at scale with indexing, elastic tables for high-volume workloads, and built-in auditing, versioning, and business rules enforcement.
 - **Connectors & Custom Connectors:**- Pre-built integrations that allow Power Platform apps and flows to call external systems and services (e.g., SharePoint, SQL Server, Salesforce, SAP, ServiceNow). Over 1,500 standard connectors are available out of the box. Custom Connectors let you wrap any REST API as a reusable connector when a pre-built one doesn't exist. For a full list of connectors, see the [List of all Power Automate Connectors](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors). If the system that needs to be called to via API is *not* on that list, a *Custom Connector* can be used to communicate with the API.
+- **Power BI:**- The analytics and reporting engine of the Power Platform. Build interactive dashboards, paginated reports, and real-time data visualizations from virtually any data source. Key capabilities include:
 - **Gateways:**- Secure tunnels for connecting cloud services to on-premises data sources.
 
 ### "Cheat Sheet" Decision Logic for Architecting
@@ -60,6 +61,7 @@ For the "major needs" of a solution (e.g. user touch points), the following is a
 4. **Legacy On-Prem Data?**- -> Data Gateways
 5. **Multi-System Orchestration?**- -> Power Automate
 6. **Conversational Interface? Agentic Automation?**- -> Copilot Studio
+7. **Reporting / Dashboards / Analytics?**- -> Power BI
 
 ## Instructions
 You will go about drafting a custom Power Platform architecture for a given use case using the following instructions below
