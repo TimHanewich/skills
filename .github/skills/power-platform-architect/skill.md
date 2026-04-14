@@ -91,10 +91,60 @@ Your architecture recommendation will be business process oriented. Meaning, you
 
 NOTE: In your architecture recommendation you *should* include *users*! Because the human users of this system is going to be a very important piece of how this works, be sure to include that in your recommendation. Try to be specific as to what group of users (i.e. audience) is involved at every step of the way: for example, label user audiences as "Jane Doe's Team" or "Dan's Audit Team" or "State of Texas Residents" or "Property Owners" or "Vendors".
 
-### 3. Architecture Visualization
-Always conclude the architectural recommendation with a **Mermaid.js*- diagram. 
-- Use `graph TD` or `sequenceDiagram` to illustrate data flow between the user, the Power Platform, and external systems (e.g., SharePoint, SQL, SAP, or Azure).
-- Use clear labels and ensure the syntax is compatible with standard Markdown previewers.
+### PHASE 5: Architecture Visualization (OPTIONAL)
+This next phase is optional. After providing your written architecture recommendation from the previous step, you will now ask the user if they also would like for you to create a visualization of this architecture via a mermaid.js diagram. It is a simple yes/no question. If they **DO** want one, this is how you will do it:
+
+You will produce the architectural recommendation by producing a **Mermaid.js diagram.** Your mermaid.js diagram will not be overly complicated. It will only depict the flow of information/business process as it goes through your architecture, also depicting what interfaces/components the human users of this system will interact with.
+
+The following is an example of the type of mermaid.js diagram you should create (not how simple it is!)
+
+```
+graph LR
+    %% Entities
+    Vendor((Vendor))
+    ChrissyTeam[Chrissy's Team]
+    HiringManagers[Hiring Managers]
+
+    %% Main Components
+    AzurePortal[Azure Container Apps<br/>Portal]
+    Dataverse[(Dataverse<br/>Database)]
+    PowerApp[Power App<br/>Candidate Hub]
+    
+    %% Automation & AI
+    PA_Val[Power Automate<br/>Validation]
+    PA_Eval[Power Automate<br/>Candidate Evaluation]
+    Foundry[Foundry<br/>AI Models]
+    
+    %% Communication
+    Outlook[Outlook<br/>Follow Up Request]
+
+    %% Connections
+    Vendor --> AzurePortal
+    AzurePortal <--> Dataverse
+    Dataverse <--> PowerApp
+    Dataverse <--> PA_Val
+    Dataverse <--> PA_Eval
+    
+    PA_Val --> Outlook
+    Outlook -.->|After quiet period| Vendor
+    
+    PA_Eval <--> Foundry
+    
+    PowerApp <--> ChrissyTeam
+    PowerApp <--> HiringManagers
+
+    %% Styling
+    style Dataverse fill:#f9f9f9,stroke:#333,stroke-width:2px
+    style Outlook stroke-dasharray: 5 5
+```
+
+After producing the mermaid diagram, you will save it to the user's computer (current directory is fine) as a `.md` file.
+
+After saving it to the `.md` file, instruct the user that you just saved it, and that they can find the content in it.
+
+Instruct them to visit `https://mermaid.ai/live/edit` and copy-and-paste the contents of that resulting `.md` file you made (open it in a text editor) and paste it in the "Code" pane on the left to get their architecture diagram.
+
+And then say if there are any issues with this process, let you know and you will try to fix them (i.e. modification to the `.md` file if there is a syntax issue).
 
 ## Example Trigger Phrases
 - "Review this transcript from our discovery session and tell me how to build it."
