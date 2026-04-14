@@ -7,7 +7,7 @@ An [**agent skill**](https://learn.microsoft.com/en-us/agent-framework/agents/sk
 [![link](https://i.imgur.com/UnImFhl.png)](https://youtu.be/tn4jEpZ6jiw)
 
 ## What It Does
-|Input|Output|
+|Input you give|Output you get|
 |-|-|
 |Business requirements, use case descriptions, discovery-session transcripts|Component recommendations, a narrative architecture walkthrough, and an optional Mermaid.js architecture diagram|
 
