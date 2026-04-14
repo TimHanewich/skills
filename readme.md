@@ -2,7 +2,9 @@
 This repository contains a number of [agent skills](https://agentskills.io/home) I've created that can be used with tools like Claude Code, GitHub Copilot, and others.
 
 ## Skills in this Repo
-- [msx](./msx/) - interface with MSX, Microsoft's CRM system.
+All skills can be found in the `.github/skills/` folder [here](./.github/skills/), but are also listed below.
+- [msx](.github/skills/msx/) - interface with MSX, Microsoft's CRM system.
+- [power-platform-architect](.github/skills/power-platform-architect/) - Solution Architect for the Microsoft Power Platform.
 
 ## Using a Skill
 For a project skill, specific to a single repository, store under `.github/skills` or `.claude/skills`.
