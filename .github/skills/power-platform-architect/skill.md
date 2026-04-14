@@ -18,14 +18,30 @@ The Power Platform provides a vast suite of tools that can be used in any digita
   - **Model-Driven Apps:** Best for data-dense, process-heavy "back-office" applications. These are automatically generated from your Dataverse schema. Use this when you need a standardized responsive design and complex security/relationship management (e.g., a CRM or Asset Management system).
     - **Code Apps:** Best for full control using code-first frameworks (React) in an IDE like VS Code, while still leveraging Power Platform's managed hosting, Entra ID authentication, 1,500+ connectors callable from JavaScript, and governance (DLP, Conditional Access, sharing limits). Use this when the app demands a custom front-end beyond what Canvas or Model-Driven can offer but still needs to run on the managed platform.
 - **Power Pages:**- Secure, low-code websites for external partners, customers, or internal portals.
-- **Copilot Studio:**- AI-powered conversational agents for natural language interaction with users and data.
-
-## Logic & Automation
+- **Copilot Studio:**- AI-powered conversational agents for natural language interaction with users and data. Build agents that can leverage knowledge sources to provide grounded answers, use tools to take action against systems, and work autonomously (background).
 - **Power Automate:**- Cloud flows for integration, scheduled tasks, and multi-stage approval workflows.
-- **Dataverse Functions (Preview):**- Reusable Power Fx logic embedded in the data layer to ensure consistent business rules across all apps and flows.
-- **AI Builder:**- Pre-built AI models (OCR, sentiment analysis, prediction) to add intelligence to processes.
-- **Prompts:**- Custom generative AI instructions for standardized LLM-based interactions.
-
+- **AI Builder:**- Pre-built AI models (OCR, sentiment analysis, prediction) to add intelligence to processes. AI Builder has the following AI models available:
+  - **Prompts:**- Custom generative AI instructions for standardized LLM-based interactions.
+  - **Document processing (Custom):** Extracts specific, user-defined information from complex or unstructured documents.
+  - **Invoice processing (Prebuilt):** Pulls key data points like vendor, date, and totals from standard invoices.
+  - **Text recognition (Prebuilt):** Standard OCR to extract all text from images and PDF documents.
+  - **Receipt processing (Prebuilt):** Extracts merchant data, dates, and line items from receipts for expense tracking.
+  - **Identity document reader (Prebuilt):** Scans and extracts data from government-issued passports and ID cards.
+  - **Business card reader (Prebuilt):** Parses contact information from business cards directly into data tables.
+  - **Sentiment analysis (Prebuilt):** Scores text as positive, negative, or neutral (ideal for customer feedback).
+  - **Category classification:**
+      - *Prebuilt:* Automatically buckets customer feedback into general categories.
+      - *Custom:* Sorts text into your organization's specific proprietary categories.
+  - **Entity extraction:**
+      - *Prebuilt:* Identifies standard data like names, dates, and locations in text.
+      - *Custom:* Trains the agent to find industry-specific terms or unique identifiers.
+  - **Key phrase extraction (Prebuilt):** Identifies the core topics or "talking points" within a large block of text.
+  - **Language detection (Prebuilt):** Automatically determines the language used in a document.
+  - **Text translation (Prebuilt):** Translates text across 90+ supported languages.
+  - **Object detection (Custom):** Identifies, locates, and counts specific items within an image (e.g., inventory tracking).
+  - **Image description (Prebuilt - Preview):** Provides a natural language summary describing the contents of an image.
+  - **Prediction (Custom):** Analyzes historical Dataverse records to predict binary (yes/no) or numerical outcomes (e.g., credit risk or project delays).
+  
 ## Data & Storage
 - **Dataverse:**- The primary secure, relational data platform for the Power Platform ecosystem.
 - **Choices:**- Global option sets used to maintain data consistency across different tables and applications.
