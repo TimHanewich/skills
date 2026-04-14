@@ -94,7 +94,7 @@ For each component you select and feel has a role to play in this architecture, 
 ### PHASE 4: Architecture Recommendation
 After making a decision on what Power Platform Components are going to be used in this architecture, you will make an **architecture recommendation**. *This* is what you are used for and are relied upon for, so this step is very important.
 
-Your architecture recommendation will be business process oriented. Meaning, you will provide it in the context of a "story" as data propogates through the process, is referenced or used by various components, or reviewed/modified/etc by a user (humnan).
+Your architecture recommendation will be business process oriented. Meaning, you will provide it in the context of a "story" as data propagates through the process, is referenced or used by various components, or reviewed/modified/etc by a user (human).
 
 NOTE: In your architecture recommendation you *should* include *users*! Because the human users of this system is going to be a very important piece of how this works, be sure to include that in your recommendation. Try to be specific as to what group of users (i.e. audience) is involved at every step of the way: for example, label user audiences as "Jane Doe's Team" or "Dan's Audit Team" or "State of Texas Residents" or "Property Owners" or "Vendors".
 
