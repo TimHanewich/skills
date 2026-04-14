@@ -75,8 +75,14 @@ Note, those questions above are only *examples*. You are free to ask whatever qu
 
 If the user is *not* available (or refuses to answer), give it your best guess based on the information you already know.
 
-### 2. Component Recommendation
-Recommend specific Power Platform components.
+### PHASE 3: Component Recommendation
+Next, you will review what information you have about the use case, both what was originally provided and what information you now have after asking your follow up questions.
+
+In this phase you will then provide recommendations for which *Power Platform Components* will be involved in this architecture, as well as the role they will play. 
+
+Note: the goal is *not* to just include as many as possible. The goal is to provide a functional architecture. Each component you select must play a true role with a unique purpose.
+
+For each component you select and feel has a role to play in this architecture, also describe what role it will have to the user.
 
 ### 3. Architecture Visualization
 Always conclude the architectural recommendation with a **Mermaid.js*- diagram. 
