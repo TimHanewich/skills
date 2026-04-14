@@ -1,0 +1,46 @@
+Internal Meeting Transcript: Evergreen County Operations Review
+Date: March 12, 2026
+Topic: Resident Services Bottlenecks & Audit Readiness
+Participants:
+
+Elena (Operations Director): Concerned with department-wide ROI and public trust.
+
+Jim (Director of Planning): Concerned with legislative compliance and backlogs.
+
+Sarah (Lead Field Inspector): Concerned with safety and onsite data accuracy.
+
+Marcus (Administrative Lead): Concerned with clerical errors and volume management.
+
+Elena: Let’s skip the pleasantries. The Board is breathing down my neck because our "Time-to-Permit" average has slipped from 14 days to 38. Jim, why is the engine stalling?
+
+Jim: It’s a volume problem combined with a visibility problem. We’re being hit with a massive wave of solar and renewable energy applications. My team is working through a "black box." I can't tell you where a specific application is in the pipeline without physically walking over to Marcus’s desk and looking at a stack of folders.
+
+Marcus: And that stack is leaning, Jim. Here’s the reality: 40% of the applications I receive are "Incomplete." Someone forgot to sign page 3, or they didn't attach the site map. But I don't catch that until I've already spent 20 minutes logging the file. Then, I have to mail a "Notice of Incompletion" and wait another week. It’s a constant loop of chasing people for basic info.
+
+Elena: So we’re wasting professional labor on basic proofreading?
+
+Marcus: Exactly. And while I’m doing that, the phones are ringing off the hook. It’s the same three questions: "Did you get my check?", "What’s my status?", and "When is the inspector coming?" I'm basically a human switchboard instead of a clerk.
+
+Sarah: Speaking of the inspectors, we’re the last ones to know anything. I’ll drive 40 minutes out to a rural site only to find out the resident hasn't even finished the prep work, or they paid the wrong fee so the permit is on hold. If I had known that before I left the office, I could have re-routed to a site that was actually ready for me.
+
+Jim: It’s also a safety and liability issue, Elena. Sarah is taking notes on paper in the rain. Those notes get transcribed later—sometimes days later. If there’s a discrepancy between what she saw on-site and what gets typed into the permanent record, we’re the ones liable if a fire starts on that roof.
+
+Elena: So we have no "single source of truth." We have a paper trail that’s fragmented between the front desk, the mailroom, and the field trucks.
+
+Sarah: And the photos! I have a memory card full of unorganized photos of junction boxes and roof mounts. Matching those to the right file number at the end of the week is a nightmare. One mistake and we’ve approved the wrong house.
+
+Jim: The biggest business risk is the lack of reporting. When the County Auditor asks me how many "Green Energy" permits we’ve processed this quarter, I have to ask my staff to stop working for two days just to manually count files and update a spreadsheet. We’re flying this plane blind.
+
+Elena: Okay, so the core needs are:
+
+Self-Service: Residents need to find their own answers and track their own status.
+
+Validation: Applications shouldn't even reach Marcus’s desk if they’re missing a signature or a fee.
+
+Field Sync: Sarah needs to see the office’s data, and the office needs to see Sarah’s notes, in real-time.
+
+Live Analytics: I need a dashboard that tells me the backlog count without anyone having to count physical folders.
+
+Jim: If we can solve those, we’ll cut the backlog in half without hiring a single new person.
+
+Elena: Understood. I’m going to look at how we can bridge these gaps with a single integrated system. We need to stop managing by "folders" and start managing by "data."
