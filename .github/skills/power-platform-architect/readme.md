@@ -10,6 +10,10 @@ A **GitHub Copilot agent skill** that acts as a Senior Solution Architect for th
 |-|-|
 |Business requirements, use case descriptions, discovery-session transcripts|Component recommendations, a narrative architecture walkthrough, and an optional Mermaid.js architecture diagram|
 
+All you have to do: **give a problem statement**! You can even supply it with a meeting transcript in which a problem/need was described:
+
+![example](https://i.imgur.com/IH1JsPZ.jpeg)
+
 The skill covers the full Power Platform ecosystem: **Power Apps** (Canvas, Model-Driven, Code Apps), **Power Pages**, **Copilot Studio**, **Power Automate** (Cloud & Desktop Flows), **AI Builder**, **Dataverse**, **Power BI**, **Connectors**, and **Gateways**.
 
 ## How It Works
