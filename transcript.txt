@@ -1,46 +1,116 @@
 Internal Meeting Transcript: Evergreen County Operations Review
 Date: March 12, 2026
 Topic: Resident Services Bottlenecks & Audit Readiness
+Location: Operations Conference Room B / Hybrid (Teams)
+
 Participants:
 
-Elena (Operations Director): Concerned with department-wide ROI and public trust.
+Elena (Operations Director): Focused on department-wide ROI, public trust, Board expectations, and audit exposure.
+Jim (Director of Planning): Focused on legislative compliance, process integrity, and backlog reduction.
+Sarah (Lead Field Inspector): Focused on inspector safety, onsite data accuracy, and field-to-office coordination.
+Marcus (Administrative Lead): Focused on intake quality, clerical accuracy, customer communications, and volume management.
 
-Jim (Director of Planning): Concerned with legislative compliance and backlogs.
+Elena: Alright. Let’s keep this tight and honest. I’m going to skip the pleasantries because the Board is not in a “warm and fuzzy” mood right now. Our average Time-to-Permit has slipped from 14 days to 38 days. That’s not a rounding error. That’s a reputational problem.
 
-Sarah (Lead Field Inspector): Concerned with safety and onsite data accuracy.
+Elena: Before we talk about solutions, I need to understand exactly where this is breaking down. Jim—what’s happening? Where is the engine stalling?
 
-Marcus (Administrative Lead): Concerned with clerical errors and volume management.
+Jim: It’s two things at the same time: volume, and visibility. We’re being hit with a surge in applications—especially solar and renewable energy projects. Some are small residential installs, some are larger commercial arrays, and they’re coming in faster than the current workflow can absorb.
 
-Elena: Let’s skip the pleasantries. The Board is breathing down my neck because our "Time-to-Permit" average has slipped from 14 days to 38. Jim, why is the engine stalling?
+Jim: But honestly, the bigger issue is visibility. We’re operating in what I’d call a “black box.” Once an application enters the pipeline, it’s surprisingly hard to answer a basic question like: Where is this file right now? Who touched it last? What is it waiting on?
 
-Jim: It’s a volume problem combined with a visibility problem. We’re being hit with a massive wave of solar and renewable energy applications. My team is working through a "black box." I can't tell you where a specific application is in the pipeline without physically walking over to Marcus’s desk and looking at a stack of folders.
+Elena: When you say “hard,” give me “hard.” What does that look like on a normal day?
 
-Marcus: And that stack is leaning, Jim. Here’s the reality: 40% of the applications I receive are "Incomplete." Someone forgot to sign page 3, or they didn't attach the site map. But I don't catch that until I've already spent 20 minutes logging the file. Then, I have to mail a "Notice of Incompletion" and wait another week. It’s a constant loop of chasing people for basic info.
+Jim: It means I can’t reliably tell a resident—or the Board—where their permit is without sending someone to physically check. Sometimes that’s me. Sometimes it’s a planner. Sometimes I’m literally walking over to Marcus’s area and looking through a stack of folders to see whether something is waiting for intake, waiting for review, waiting for inspection scheduling, or waiting on a fee.
 
-Elena: So we’re wasting professional labor on basic proofreading?
+Marcus: And that stack is leaning, Jim. Let me add some context: the volume isn’t just “more permits.” It’s also “more incomplete permits.”
 
-Marcus: Exactly. And while I’m doing that, the phones are ringing off the hook. It’s the same three questions: "Did you get my check?", "What’s my status?", and "When is the inspector coming?" I'm basically a human switchboard instead of a clerk.
+Marcus: Here’s the reality from intake: about 40% of the applications we receive are incomplete in some way. Missing signatures. Missing site maps. Attachments that are referenced but not included. Or the payment is wrong—wrong amount, wrong type, or just not included.
 
-Sarah: Speaking of the inspectors, we’re the last ones to know anything. I’ll drive 40 minutes out to a rural site only to find out the resident hasn't even finished the prep work, or they paid the wrong fee so the permit is on hold. If I had known that before I left the office, I could have re-routed to a site that was actually ready for me.
+Elena: Forty percent?
 
-Jim: It’s also a safety and liability issue, Elena. Sarah is taking notes on paper in the rain. Those notes get transcribed later—sometimes days later. If there’s a discrepancy between what she saw on-site and what gets typed into the permanent record, we’re the ones liable if a fire starts on that roof.
+Marcus: Yes. And it’s not like I can spot all of that instantly at the front door. First, I have to open it, log it, enter the applicant details, create the folder, and file it. That’s easily 15 to 20 minutes before I can even do a full “completeness scan.”
 
-Elena: So we have no "single source of truth." We have a paper trail that’s fragmented between the front desk, the mailroom, and the field trucks.
+Marcus: Then I discover it’s missing page 3 signatures, or the checklist isn’t filled out, or the site plan is illegible. At that point, I have to generate a Notice of Incompletion, mail it, and we’re stuck waiting. That turns a fixable issue into a week-long delay, sometimes more, because we’re back-and-forthing by paper and phone tag.
 
-Sarah: And the photos! I have a memory card full of unorganized photos of junction boxes and roof mounts. Matching those to the right file number at the end of the week is a nightmare. One mistake and we’ve approved the wrong house.
+Elena: So we’re spending professional labor—paid staff time—doing basic proofreading and scavenger hunts for missing forms.
 
-Jim: The biggest business risk is the lack of reporting. When the County Auditor asks me how many "Green Energy" permits we’ve processed this quarter, I have to ask my staff to stop working for two days just to manually count files and update a spreadsheet. We’re flying this plane blind.
+Marcus: Exactly. And while we’re doing that, we’re also getting buried in status requests. The phones are ringing nonstop. It’s the same three questions all day long:
+1) “Did you receive my check?”
+2) “What is the status of my permit?”
+3) “When is the inspector coming?”
 
-Elena: Okay, so the core needs are:
+Marcus: And because residents can’t self-serve those answers, they call us. So I’m less of an administrative lead and more of a human switchboard.
 
-Self-Service: Residents need to find their own answers and track their own status.
+Jim: And every time Marcus has to stop and answer those calls, it slows down intake, which slows down review, which slows down inspection scheduling. The whole system gets dragged down by interruptions.
 
-Validation: Applications shouldn't even reach Marcus’s desk if they’re missing a signature or a fee.
+Elena: So the work is being throttled by avoidable communication demand—people asking questions because there’s no transparency.
 
-Field Sync: Sarah needs to see the office’s data, and the office needs to see Sarah’s notes, in real-time.
+Marcus: That’s right. And it’s not just residents. Contractors call too. Solar companies call. Sometimes their office calls multiple times because they have ten permits with us and no way to track them except to keep calling.
 
-Live Analytics: I need a dashboard that tells me the backlog count without anyone having to count physical folders.
+Sarah: And if I can jump in—inspectors are often the last people to learn anything meaningful. I’ll drive 40 minutes out to a rural site, show up ready to inspect, and find out the resident hasn’t finished prep work. Or the permit is actually on hold because the fee was wrong or the application got flagged, but nobody told me before I left the office.
 
-Jim: If we can solve those, we’ll cut the backlog in half without hiring a single new person.
+Elena: That’s wasted time. And mileage. And scheduling capacity.
 
-Elena: Understood. I’m going to look at how we can bridge these gaps with a single integrated system. We need to stop managing by "folders" and start managing by "data."
+Sarah: Exactly. And it’s not just “annoying,” it’s operationally destructive. If I knew before I left the building that a site wasn’t ready, I could reroute and inspect a site that is ready. But because the data isn’t synced in real time, I’m working blind in the field.
+
+Jim: It’s also a safety and liability issue, Elena. Sarah is taking notes on paper on active worksites, sometimes in poor weather. Then those notes get transcribed later—sometimes that afternoon, sometimes days later depending on workload.
+
+Jim: If there’s a discrepancy between what Sarah observed onsite and what eventually gets typed into the permanent record, we own that discrepancy. If something fails later—fire, structural issue, electrical hazard—our recordkeeping becomes part of the liability story.
+
+Sarah: And the photos are part of it too. I take photos of roof mounts, junction boxes, conduit routes, serial plates—normal inspection evidence. But right now, I have a memory card full of photos that I have to manually match to permit numbers later. If I’m doing that on a Friday afternoon after four inspections, it’s easy to mislabel something. One wrong photo attached to one wrong file, and it looks like we approved the wrong house.
+
+Elena: So what we have is not a “system.” It’s multiple disconnected mini-systems: paper at intake, paper in review, paper in the truck, and then manual re-entry into whatever digital record we maintain later.
+
+Marcus: That’s a good way to put it. The process works, but only if everything goes perfectly and nobody gets interrupted—which is not the real world.
+
+Jim: And from a management perspective, the biggest pain is reporting. When the County Auditor asks me how many “Green Energy” permits we processed this quarter, I can’t answer from a dashboard. I have to ask staff to stop doing productive work and manually count files, reconcile spreadsheets, and verify categories.
+
+Jim: So even when we do try to produce numbers, we’re paying for it in lost throughput.
+
+Elena: Which means the reporting is not just “hard,” it’s actively costing us time and making the backlog worse.
+
+Jim: Correct. We’re flying the plane blind. We don’t have reliable real-time metrics on where bottlenecks are forming.
+
+Elena: Let’s put a pin in solutions for one moment. I want a clean list of core failure points, in plain language, so I can communicate this upward without making it sound like excuses.
+
+Elena: Marcus—what’s the top operational failure from your seat?
+
+Marcus: Intake quality. Applications should not enter the pipeline if they’re missing mandatory items. We need a way to validate completeness before staff time is spent logging and filing.
+
+Elena: Sarah?
+
+Sarah: Field coordination and data capture. Inspectors need current office status before driving out, and the office needs inspection results immediately—not days later. Also, photo evidence needs to attach to the correct record at the moment it’s taken.
+
+Elena: Jim?
+
+Jim: Visibility and analytics. We need to know exactly where each permit is in the workflow, and we need reporting that doesn’t require manual counting. Otherwise we’ll never get ahead of this.
+
+Elena: Okay. Let me summarize what I’m hearing and translate it into needs.
+
+Elena: One: Self-Service and Transparency. Residents and contractors need to find their own answers—status, payments received, next steps—without calling us.
+
+Elena: Two: Upfront Validation. Applications shouldn’t even reach Marcus’s desk if they’re missing a signature, a required attachment, or the correct fee.
+
+Elena: Three: Field Sync. Sarah needs the office’s data in real time, and the office needs Sarah’s notes and photos in real time—one record, not three versions.
+
+Elena: Four: Live Analytics and Audit Readiness. We need dashboards and a defensible record trail. If the Auditor asks, we answer with data—not a week of manual reconciliation.
+
+Jim: If we can solve those four, we’ll cut the backlog in half without hiring a single new person. And we’ll reduce risk at the same time.
+
+Marcus: And it’ll reduce the constant interruption load. If the phone volume drops, intake speed goes up immediately.
+
+Sarah: And we’ll do fewer pointless trips, which means more inspections completed per day, which reduces the bottleneck.
+
+Elena: Understood. I’m going to look at what it takes to bridge these gaps with a single integrated system. At a minimum, we need to stop managing by “folders” and start managing by “data.”
+
+Elena: Next step: I want each of you to send me, by end of day tomorrow, three examples of the worst-case scenarios you’ve experienced—specific stories. Missing signatures that caused weeks of delay. An inspection trip that was wasted. A reporting request that took days. Those concrete examples will help me build the case.
+
+Elena: Anything else before we wrap?
+
+Jim: Only that the longer we stay paper-driven, the more fragile the process becomes as volume grows.
+
+Marcus: Agreed. The system isn’t failing because people aren’t working—it’s failing because the workflow is designed for a different decade.
+
+Sarah: And because the field is treated like a separate world instead of part of the same process.
+
+Elena: Got it. Meeting adjourned. I’ll follow up with a plan and timeline proposal.
