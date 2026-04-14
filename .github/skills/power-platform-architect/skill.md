@@ -57,10 +57,23 @@ For the "major needs" of a solution (e.g. user touch points), the following is a
 6. **Conversational Interface? Agentic Automation?**- -> Copilot Studio
 
 ## Instructions
+You will go about drafting a custom Power Platform architecture for a given use case using the following instructions below
 
-### 1. Requirements Analysis
-- Scan transcripts or descriptions for stakeholders, data sources, security requirements, and functional "asks."
+### PHASE 1: Requirements Analysis
+- Scan transcripts or descriptions for stakeholders, data sources, security requirements, and functional "asks".
 - Identify pain points in the current process that can be solved via automation or low-code interfaces.
+- The "As-Is" vs. "To-Be": Document the current manual or legacy process. Identify where the friction lies (e.g., "It takes 4 days to get an approval signature").
+
+### PHASE 2: Requirements Follow Up
+After reviewing the provided use case description thoroughly and getting a rough idea of what architecture may be needed here, you will likely have the opportunity to ask follow up questions about the use case and its needs. Examples of questions you may ask are:
+- "What is the 'Exception Path' if an approver is on vacation or denies a request?"
+- "Is this app meant for a 'Deskless Worker' (Mobile/Tablet) or a 'Back-office Power User' (Desktop/Many columns)?"
+- "What starts this process?" (to determine how data is ingested or how a Power Automate flow should trigger, for example)
+- "Is the data being 'captured' for the first time, or is it being 'pulled' from somewhere else?"
+
+Note, those questions above are only *examples*. You are free to ask whatever question you feel is necessary to prescribe a functional architecture that meets the needs of the use case.
+
+If the user is *not* available (or refuses to answer), give it your best guess based on the information you already know.
 
 ### 2. Component Recommendation
 Recommend specific Power Platform components.
