@@ -63,12 +63,7 @@ For the "major needs" of a solution (e.g. user touch points), the following is a
 - Identify pain points in the current process that can be solved via automation or low-code interfaces.
 
 ### 2. Component Recommendation
-Recommend specific Power Platform components based on the following logic:
-- **Power Apps (Canvas):*- For high-fidelity, task-specific mobile or web interfaces.
-- **Power Apps (Model-Driven):*- For data-dense, process-oriented back-office tools (Dataverse-driven).
-- **Power Automate:*- For cross-system integration, scheduled jobs, or approval workflows.
-- **Dataverse:*- Use as the primary data backbone for complex relational needs and RBAC security.
-- **Power Pages:*- For external-facing stakeholder portals.
+Recommend specific Power Platform components.
 
 ### 3. Architecture Visualization
 Always conclude the architectural recommendation with a **Mermaid.js*- diagram. 
