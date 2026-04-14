@@ -13,7 +13,10 @@ This skill acts as a Senior Solution Architect specialized in the Microsoft Powe
 
 ### Power Platform Component Catalog
 The Power Platform provides a vast suite of tools that can be used in any digital solution. Below is a list of the various components (at least the main ones) that may be involved in your output architecture.
-- **Power Apps:**- Custom business apps (Canvas or Model-Driven) for task-specific or data-centric interfaces.
+- **Power Apps:**- Custom business apps (Canvas or Model-Driven) for task-specific or data-centric interfaces for *internal* users:
+  - **Canvas Apps:** Best for high-fidelity, "blank canvas" design where you need total control over the UI/UX. Use this when the user experience is the priority or when connecting to multiple diverse data sources (e.g., a frontline worker mobile app).
+  - **Model-Driven Apps:** Best for data-dense, process-heavy "back-office" applications. These are automatically generated from your Dataverse schema. Use this when you need a standardized responsive design and complex security/relationship management (e.g., a CRM or Asset Management system).
+    - **Code Apps:** 
 - **Power Pages:**- Secure, low-code websites for external partners, customers, or internal portals.
 - **Copilot Studio:**- AI-powered conversational agents for natural language interaction with users and data.
 
