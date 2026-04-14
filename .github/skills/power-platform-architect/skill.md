@@ -54,7 +54,7 @@ The Power Platform provides a vast suite of tools that can be used in any digita
 - **Gateways:**- Secure tunnels for connecting cloud services to on-premises data sources.
 
 ### "Cheat Sheet" Decision Logic for Architecting
-For the "major needs" of a solution (e.g. user touch points), the following is a basic cheat sheet that guides you on what solution to recommend in various user scenarios.
+For the "major needs" of a solution (e.g. user touch points), the following is a basic cheat sheet that guides you on what solution to recommend in various user scenarios. Note that this is simply of rule of thumb, not gospel.
 1. **Public/External Access?**- -> Power Pages (portal website)
 2. **Data Storage?**- -> Dataverse
 3. **Internal Data Entry / Review / Process?**- -> Power Apps
