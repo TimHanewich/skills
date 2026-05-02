@@ -4,6 +4,7 @@ This repository contains a number of [agent skills](https://agentskills.io/home)
 ## Skills in this Repo
 All skills can be found in the `.github/skills/` folder [here](./.github/skills/), but are also listed below.
 - [msx](.github/skills/msx/) - interface with MSX, Microsoft's CRM system.
+- [timh-design](.github/skills//timh-design/) - build UI with my consistent personal theming and styling.
 - [power-platform-architect](https://aka.ms/power-platform-architect) - Solution Architect for the Microsoft Power Platform. (*hosted within GitHub's [awesome-copilot library](https://github.com/github/awesome-copilot)*)
 
 ## Using a Skill
