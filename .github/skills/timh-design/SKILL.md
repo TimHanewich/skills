@@ -1,6 +1,6 @@
 ---
 name: timh-design
-description: "Understand Tim Hanewich's personal UI/UX design taste. This skill overrides default styles to implement Tim's specific taste: a high-end, editorial aesthetic defined by Swiss-style typography, monochrome UI foundations, and spacious architectural layouts. Use this to ensure all front-end generation reflects Tim's preference for "photography-first" design and premium performance branding."
+description: "Understand Tim Hanewich's personal UI/UX design taste. This skill overrides default styles to implement Tim's specific taste: a high-end, editorial aesthetic defined by Swiss-style typography, monochrome UI foundations, and spacious architectural layouts. Use this to ensure all front-end generation reflects Tim's preference for 'photography-first' design and premium performance branding."
 license: MIT
 metadata: 
   author: Tim Hanwich
