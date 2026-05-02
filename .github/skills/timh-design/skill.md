@@ -10,13 +10,13 @@ metadata:
 The following is Tim Hanewich's ("TIMH") personal UI/UX design taste. If you are asked to build a user interface such as a front-end and told to do so with Tim Hanewich's theme in mind, follow these principles.
 
 ## Theme Summary
-This theme is modern, premium, athletic, and editorial. It blends minimalist Swiss-style restraint with bold lifestyle photography. The visual language feels clean, breathable, product-focused, and performance-oriented. It relies heavily on oversized imagery, strong whitespace, crisp typography, and simple black/white foundations with occasional soft neutral or energetic accent colors coming from photography rather than UI chrome.
+This theme is modern, premium, athletic, and editorial. It blends minimalist Swiss-style restraint with bold lifestyle photography. The visual language feels clean, breathable, image-driven, and performance-oriented. It relies heavily on oversized imagery, strong whitespace, crisp typography, and simple black/white foundations with occasional soft neutral or energetic accent colors coming from photography rather than UI chrome.
 
 ## Core Brand Feeling
 - Premium performance lifestyle
 - Minimal, refined, and confident
 - Clean and architectural
-- High-end retail / direct-to-consumer ecommerce
+- Editorial and image-led
 - Editorial rather than decorative
 - Motion, energy, and aspiration
 
@@ -25,8 +25,8 @@ This theme is modern, premium, athletic, and editorial. It blends minimalist Swi
 2. Keep interface chrome minimal and quiet.
 3. Use large type with strong hierarchy.
 4. Favor spacious layouts with lots of breathing room.
-5. Use neutral UI colors so products and images stand out.
-6. Avoid ornamental details unless they serve structure or merchandising.
+5. Use neutral UI colors so imagery and content stand out.
+6. Avoid ornamental details unless they serve structure or composition.
 
 ## Color System
 ### Primary UI Colors
@@ -36,7 +36,7 @@ This theme is modern, premium, athletic, and editorial. It blends minimalist Swi
 - Borders/dividers: subtle light gray
 
 ### Accent Usage
-Accents are used sparingly and usually come from product photography rather than interface elements. Typical tones seen in the compositions:
+Accents are used sparingly and usually come from photography rather than interface elements. Typical tones seen in the compositions:
 - Soft sky blue
 - Muted lavender
 - Neon yellow/volt green
@@ -67,14 +67,14 @@ Typography is bold, sans-serif, and highly legible. It feels neo-grotesque or Sw
 - Tight but readable line spacing on large display text
 - Minimal use of italics or decorative type
 - Navigation labels are simple and clean
-- Category lists use oversized text for emphasis
+- Section and category lists use oversized text for emphasis
 
 ### Suggested Type Roles
 - Hero headline: extra large, bold, clean
 - Section headline: large, bold
 - Intro/body copy: medium size, regular weight
-- Product title: medium, semibold
-- Product metadata: small to medium, regular
+- Card title: medium, semibold
+- Supporting metadata: small to medium, regular
 - Navigation: small to medium, medium weight
 - Eyebrow/section label: small uppercase or spaced caps
 
@@ -91,9 +91,9 @@ Typography is bold, sans-serif, and highly legible. It feels neo-grotesque or Sw
 The layout is modular and spacious. Sections alternate between:
 - Full-bleed hero imagery with overlaid text
 - Split-screen content blocks
-- Three-column editorial/product cards
+- Three-column editorial/content cards
 - Large text lists paired with imagery
-- Horizontal product rails
+- Horizontal image or story rails
 - Mosaic/stacked storytelling panels
 
 ### Spacing Philosophy
@@ -101,7 +101,7 @@ The layout is modular and spacious. Sections alternate between:
 - Large vertical rhythm between sections
 - Comfortable gaps between cards
 - Minimal clutter
-- Layout breathes more than a typical ecommerce site
+- Layout breathes more than a typical dense content experience
 
 ### Grid Guidance
 - Use a 12-column desktop grid
@@ -144,12 +144,12 @@ The layout is modular and spacious. Sections alternate between:
 - Rounded corners are subtle, not overly soft
 - Text overlays are simple and high contrast
 
-### Product Cards
-- Light neutral product tile background
-- Product image centered with ample breathing room
-- Wishlist icon small and unobtrusive in top corner
-- Product info sits below image, left-aligned
-- Badges such as “Bestseller” are small and restrained
+### Image/Content Cards
+- Light neutral tile background
+- Primary image centered with ample breathing room
+- Minimal utility iconography when needed
+- Supporting text sits below image, left-aligned
+- Labels or badges should be small and restrained
 
 ### Story/Editorial Cards
 - Mix image cards with solid-color quote/statement panels
@@ -165,14 +165,14 @@ Photography is the core of the theme.
 - Full-body or cropped body-detail compositions
 - Clean environments with simple backgrounds
 - Occasional dramatic lighting or flash photography
-- Strong color moments from apparel or outdoor conditions
+- Strong color moments from apparel, movement, or outdoor conditions
 
 ### Composition Patterns
 - Oversized hero crop with subject partially out of frame
 - Text anchored in corners over imagery
 - Tall portrait cards for categories/storytelling
 - Mixed-scale collage layouts
-- Product photography on seamless, neutral backgrounds
+- Clean portrait or still-life photography on seamless, neutral backgrounds
 
 ## Section Patterns to Reuse
 ### 1. Full-Bleed Hero
@@ -199,10 +199,10 @@ Photography is the core of the theme.
 - Right side: one strong editorial image
 - High-contrast typography against very light background
 
-### 5. Horizontal Product Carousel
+### 5. Horizontal Editorial Carousel
 - Large section title above
-- Wide product cards on pale gray background
-- Minimal product metadata below
+- Wide image or content cards on pale gray background
+- Minimal supporting metadata below
 - Discreet navigation arrows and progress indicator
 
 ### 6. Mission / Brand Story Mosaic
@@ -222,7 +222,7 @@ Photography is the core of the theme.
 - Use smooth fade/slide transitions
 - Keep duration moderate and elegant
 - Emphasize content reveal rather than decorative animation
-- Product carousels should feel fluid and quiet
+- Horizontal carousels should feel fluid and quiet
 - Menus can slide or expand with minimal friction
 - Avoid bouncy, playful motion; use refined motion
 
@@ -230,7 +230,7 @@ Photography is the core of the theme.
 ### Best Practices for Developers
 - Build the system around reusable content blocks
 - Keep a monochrome design token base
-- Separate merchandising accents from structural UI styling
+- Separate photographic accents from structural UI styling
 - Use image aspect-ratio utilities for consistency
 - Design for strong responsive image cropping
 - Ensure text overlay contrast is always accessible
@@ -252,8 +252,8 @@ Photography is the core of the theme.
 - Hero banner with overlay content
 - Mega menu / flyout navigation
 - Image category card
-- Product card
-- Horizontal product rail
+- Image/content card
+- Horizontal content rail
 - Editorial split section
 - Story mosaic card group
 - Primary pill button
@@ -266,7 +266,7 @@ Photography is the core of the theme.
 - Keep interfaces clean and sparse
 - Make typography bold and confident
 - Use whitespace as a premium device
-- Let merchandising and imagery provide color
+- Let imagery provide color and energy
 
 ## Don't
 - Don't overdecorate with gradients, patterns, or heavy shadows
@@ -278,5 +278,5 @@ Photography is the core of the theme.
 
 ## Example One-Sentence Theme Prompt
 ```
-Design a premium athletic ecommerce interface with Swiss-inspired minimalism, oversized editorial sports photography, bold sans-serif typography, soft neutral backgrounds, pill-shaped CTAs, spacious modular layouts, and restrained black/white UI styling that lets the products and imagery carry the energy.
+Design a premium athletic editorial interface with Swiss-inspired minimalism, oversized sports photography, bold sans-serif typography, soft neutral backgrounds, pill-shaped CTAs, spacious modular layouts, and restrained black/white UI styling that lets the imagery carry the energy.
 ```
