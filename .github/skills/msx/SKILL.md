@@ -1,7 +1,7 @@
 ---
 name: msx
 description: "Use this skill any time the user wants to interact with MSX (Microsoft's internal CRM system, Dynamics 365). This includes: looking up accounts, searching for users or colleagues, finding opportunities, creating or listing tasks, checking your own identity (WhoAmI), or running raw OData queries against MSX. Trigger whenever the user mentions \"MSX,\" \"CRM,\" \"Dynamics,\" \"opportunities,\" \"deal team,\" \"accounts\" in a sales/CRM context, or wants to log a task or activity in the sales system. The skill operates through the `msx` CLI tool, which must be authenticated with a browser cookie before use."
-compatibility: "Requires .NET 10+ runtime. The `msx` CLI must be installed as a global dotnet tool. Requires network access to microsoftsales.crm.dynamics.com."
+compatibility: "Requires network access to microsoftsales.crm.dynamics.com."
 ---
 
 # MSX CLI Skill
