@@ -1,10 +1,7 @@
 # Impact Summaries, Performance Write-Ups, and Outcome Documentation
 Use this reference when writing in Tim Hanewich's voice for:
-- performance self-reviews
-- Connect write-ups
-- promotion packets
+- Performance reviews
 - impact summaries
-- workshop result summaries
 - project outcome documentation
 - achievement recaps
 - business impact narratives
