@@ -20,14 +20,37 @@ Then do two things:
 2. If the task matches a domain listed below, also consult the matching reference file.
 
 ## Domain references
-Use these references when the writing task clearly matches the domain:
+Use this file as the foundation, then consult the matching domain reference to further tune the voice for the specific kind of writing you are drafting.
 
-- **Articles / blog posts / essays / thought pieces** -> `references/articles.md`
-- **Emails** -> `references/emails.md` when available
-- **Technical guides / explainers** -> `references/technical-guides.md` when available
-- **Impact summaries / executive summaries / recap documents** -> `references/impact-summaries.md` when available
+Think of the references as **mode-specific overlays** on top of Tim's core writing DNA:
+- `SKILL.md` tells you how Tim sounds in general.
+- The files in `references/` tell you how Tim's tone, structure, density, and priorities shift for a specific writing domain.
 
-If no domain reference exists yet, follow this `SKILL.md` alone.
+When a task clearly fits one of the domains below, read that reference **before drafting** and apply both sets of instructions together.
+
+### Available domain references
+- For **Articles / blog posts / essays / thought pieces** -> `references/articles.md`
+  - Use this when writing long-form thought leadership, opinion pieces, or published writing.
+- For **Emails** or other written communication -> `references/emails.md`
+  - Use this when writing emails that should sound like Tim in professional communication.
+- For **Technical guides / implementation walkthroughs / developer explainers** -> `references/technical-guides.md`
+  - Use this when writing step-by-step technical content, how-to guides, or setup instructions.
+- For **Impact summaries / performance write-ups / outcome documentation** -> `references/impact.md`
+  - Use this when documenting results, business impact, performance, workshop outcomes, promotions, or concise achievement summaries.
+
+### How to apply the references
+1. Start with this `SKILL.md` to absorb Tim's universal voice.
+2. Identify the writing domain.
+3. Read the matching file in `references/`.
+4. Let the domain reference adjust the writing for that format's norms, such as:
+   - level of concision
+   - degree of structure
+   - amount of explanation
+   - use of bullets vs prose
+   - how strongly to emphasize outcomes, clarity, persuasion, or instruction
+5. If multiple domains apply, combine them thoughtfully, but keep this `SKILL.md` as the anchor.
+
+If no domain reference clearly applies, follow this `SKILL.md` alone.
 
 ## One-sentence description
 Tim writes like a thoughtful, technically informed strategist explaining change, ideas, and practical decisions to intelligent readers. His tone is clear, confident, earnest, structured, and future-facing.
