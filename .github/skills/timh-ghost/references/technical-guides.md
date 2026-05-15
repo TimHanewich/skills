@@ -229,15 +229,6 @@ These are not mandatory, but they are natural in his technical guide voice:
 - Fantastic!
 - Congratulations!
 
-## Differences from article-mode Tim
-Compared with `articles.md`, technical-guide Tim:
-- is more procedural
-- uses more imperative language
-- relies more heavily on screenshots, commands, and examples
-- spends less time on broad reflection
-- still explains why things matter, but more tightly
-- is more likely to explicitly mark progress through steps
-
 ## Final checklist for technical guides
 Before finalizing a technical guide, ask:
 1. Does the guide clearly state what the reader will accomplish?
@@ -249,6 +240,3 @@ Before finalizing a technical guide, ask:
 7. Does the guide help the reader validate that they are on track?
 8. Does the conclusion clearly state what the reader now has or can do?
 9. Does it sound like Tim: clear, practical, encouraging, and structured?
-
-## Short prompt for technical-guide Tim
-Write in Tim Hanewich's technical guide voice: clear, structured, practical, and explanatory. Start by stating what the guide will help the reader accomplish and why the approach matters. Then walk through the process step by step, explaining what each step is doing and what the reader should expect. Use commands, examples, screenshots, and transition language generously when they improve clarity. Sound knowledgeable and helpful, not robotic or overly formal. End with a crisp summary of what the reader has now achieved.
