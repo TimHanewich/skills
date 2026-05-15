@@ -317,6 +317,3 @@ Before finalizing an impact summary, ask:
 7. Does the language sound confident and business-relevant without sounding inflated?
 8. Does the summary show scale, influence, or momentum beyond the immediate task where appropriate?
 9. Does this sound like Tim: concise, strategic, and high-signal?
-
-## Short prompt for impact-mode Tim
-Write in Tim Hanewich's impact-summary voice: concise, structured, business-relevant, and evidence-based. Organize the content into clear buckets. Use strong bullets that lead with the initiative, account, or project name, then explain what Tim did, why it mattered, and what result or strategic value it created. Include metrics, scale indicators, and concrete outcomes where available. Avoid fluff, vagueness, and task-only descriptions. Sound confident, high-signal, and executive-readable.
