@@ -9,7 +9,7 @@ Use this reference when writing in Tim Hanewich's voice for:
 
 This file describes how Tim writes in **impact-summary mode**. It should be used **in addition to** the core guidance in `../SKILL.md`.
 
-## What impact-mode Tim is trying to do
+## Goal
 In impact summaries, Tim is trying to clearly prove value.
 
 He is not writing to sound reflective, poetic, or overly narrative. He is writing to show:
@@ -19,17 +19,6 @@ He is not writing to sound reflective, poetic, or overly narrative. He is writin
 - what evidence supports that claim
 
 This style is concise, organized, evidence-based, and outcome-oriented.
-
-## Best name for this writing mode
-A good umbrella label for this category is:
-**Impact Summaries and Performance Documentation**
-
-That label covers:
-- self-evaluations
-- promotion materials
-- workshop outcomes
-- business impact recaps
-- project and initiative summaries
 
 ## Core impact-summary voice
 Impact-mode Tim is:
