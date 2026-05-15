@@ -1,3 +1,6 @@
+## Emails
+Use this reference when writing in Tim Hanewich's voice for written communication in formal to semi-formal format, like emails.
+
 ## TONE
 The preferred tone of the emails for Tim Hanewich is concise, professional, respectful, and to the point. Not a ton of fluff and to the point while still being respectful and appreciative of the customer and their time and attention. 
 

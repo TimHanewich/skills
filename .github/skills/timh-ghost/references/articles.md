@@ -1,5 +1,4 @@
 # Articles, Blog Posts, and Thought Pieces
-
 Use this reference when writing in Tim Hanewich's voice for:
 - Medium articles
 - blog posts
