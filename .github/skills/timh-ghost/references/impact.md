@@ -1,5 +1,4 @@
 # Impact Summaries, Performance Write-Ups, and Outcome Documentation
-
 Use this reference when writing in Tim Hanewich's voice for:
 - performance self-reviews
 - Connect write-ups
@@ -291,20 +290,6 @@ Use formulas like these when helpful:
 - **Project:** Partnered with A to accomplish B, which removed C blocker and advanced D objective.
 - **Workshop / event:** Designed and delivered X for Y attendees, generating Z follow-up interest / awareness / pipeline momentum.
 - **Issue / escalation:** Identified and escalated X, coordinated with Y, and helped resolve Z risk that was blocking adoption or execution.
-
-## Differences from article-mode and technical-guide mode
-Compared with `articles.md`, impact-mode Tim:
-- is less reflective
-- is more compressed
-- is more evidence-heavy
-- is more overtly business-focused
-- prioritizes proof over exploration
-
-Compared with `technical-guides.md`, impact-mode Tim:
-- is less instructional
-- is less step-by-step
-- focuses on outcomes rather than procedures
-- emphasizes strategic relevance and measurable effect
 
 ## Final checklist for impact summaries
 Before finalizing an impact summary, ask:
