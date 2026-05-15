@@ -299,3 +299,38 @@ Before finalizing an impact summary, ask:
 7. Does the language sound confident and business-relevant without sounding inflated?
 8. Does the summary show scale, influence, or momentum beyond the immediate task where appropriate?
 9. Does this sound like Tim: concise, strategic, and high-signal?
+
+## Example impact bullets from Tim's writing
+These examples are helpful because they show how Tim combines:
+- a named initiative or account
+- his personal action
+- evidence or scale
+- the downstream business effect
+
+### Example 1: Workshop impact with scale and follow-up momentum
+- **TxDOT Power Platform Workshop (May):** Designed and delivered a two-day, hands-on Power Platform workshop at TxDOT's Stassney Campus in Austin, drawing 90 registrations across multiple TxDOT divisions. Covered Plan Designer, AI Builder, Copilot Studio, Power Automate, and Power Apps through live demonstrations and guided hands-on labs. Partnered with internal champion Sri Venkata and ITD leadership to coordinate logistics. Collaboratively mapped a real business process ("AskPEPS") with a PEPS division volunteer, demonstrating immediate applicability. The workshop drove platform awareness, generated follow-up interest in a Low Code Quickstart Program, and positioned Power Platform as TxDOT's go-to platform for departmental automation.
+
+### Example 2: Event series impact with hard numbers
+- **Tech Series Presentations:** Designed, marketed, and delivered three customer-facing Tech Series webinars to the State & Local Government community, collectively drawing **618 registrations**.
+
+### Example 3: Pipeline summary with quantified breadth
+- In this period, I contributed **173** High-Value Activities (logged in MSX) to over **$8.8M** in qualified, piped revenue across **53** unique opportunities and accounts.
+
+### Example 4: Account-specific impact tied to customer confidence
+- **[$74K at TxDOT](https://microsoftsales.crm.dynamics.com/main.aspx?appid=fe0c3504-3700-e911-a849-000d3a10b7cc&forceUCI=1&pagetype=entityrecord&etn=opportunity&id=aa21a861-c8a9-f011-bbd3-6045bded2040):** Built and delivered an end-to-end proof of concept for invoice processing using Power Platform AI Builder, trained on TxDOT's actual invoices. Coordinated with internal champion Sri Venkata to prepare the executive presentation, then demonstrated AI capabilities directly to TxDOT's executive leadership, securing confidence in Microsoft's ability to automate critical financial workflows.
+
+### Example 5: Product issue escalation framed as business unblocker
+- **Product Group Collaboration: Copilot Studio GCC Double-Billing:** Identified and escalated a critical billing defect in GCC where M365 Copilot-licensed users were incorrectly consuming Copilot Studio credits when using custom engine agents, effectively double-billing customers. Filed the IcM, reproduced the issue in our internal GCC tenant, gathered session telemetry and tenant IDs from affected customers (South Dakota, Riverside County, National Gallery of Art, PNNL), and served as the primary liaison between the field and the Product Group engineering team. This issue was blocking active opportunities and stalling Copilot Studio adoption across multiple government accounts; resolving it removes a critical obstacle to AI market share capture in GCC.
+
+### Example 6: Presentation impact framed as market influence
+- **TX DIR Innovation Conference:** Championed awareness of Power Platform's AI capabilities in the highly competitive Texas market, including delivering a featured session at DIR's "Innovation" conference on Power Platform Plan Designer and the shift to AI-driven development with Microsoft Copilot. The session ranked as the highest-rated presentation of the event, earning an average score of **9.8/10** and reinforcing Microsoft's leadership in AI innovation for State & Local Government.
+
+### Why these examples work
+These examples work because they do more than describe activity. They usually include several of the following:
+- a bolded initiative or account name
+- a strong ownership verb
+- quantitative evidence
+- specific stakeholders or audience scope
+- a clear statement of business value, momentum, confidence, adoption, or strategic impact
+
+When possible, imitate the pattern, not just the wording.
