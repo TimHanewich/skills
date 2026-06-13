@@ -135,3 +135,9 @@ You can use the design language described above to create whatever you want. For
 | - | - |
 | [headers.md](./references/controls/headers.md) | For page titles, wordmarks, and section headers |
 | [button.md](./references/controls/button.md) | For interactive buttons |
+| [card.md](./references/controls/card.md) | For cards that contain grouped information |
+| [console.md](./references/controls/console.md) | For console-like activity logs that show messages as they appear |
+| [input.md](./references/controls/input.md) | For collecting text input via form fields |
+| [navigation-header.md](./references/controls/navigation-header.md) | For a top-of-page navigation header with multiple options |
+| [navigation-sidebar.md](./references/controls/navigation-sidebar.md) | For left-hand sidebar navigation |
+| [table.md](./references/controls/table.md) | For displaying rows of data such as query results or records |
