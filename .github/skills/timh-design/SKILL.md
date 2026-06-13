@@ -1,6 +1,6 @@
 ---
 name: timh-design
-description: "Understand Tim Hanewich's personal UI/UX design taste. This skill overrides default styles to implement Tim's specific taste."
+description: "Describes Tim Hanewich's personal UI/UX design taste. This skill overrides default styles to implement Tim's specific taste."
 license: MIT
 metadata: 
   author: Tim Hanwich
