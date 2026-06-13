@@ -12,8 +12,7 @@ The following is Tim Hanewich's ("TIMH") personal UI/UX design taste. If you are
 ## Design Philosophy
 - **Clean and minimal.** No unnecessary decoration. Every element earns its place.
 - **Light by default.** Backgrounds are near-white, not pure white. Text is near-black, not pure black.
-- **One accent, used sparingly.** The accent color is a soft steel blue. It appears on hover states and highlights — not as a background fill for entire sections.
-- **Subtle motion over no motion.** Transitions should feel smooth and intentional (0.3s ease), not flashy or distracting.
+- **Accents used sparingly.** The accent color is a soft steel blue. It appears on hover states and highlights, not as a background fill for entire sections.
 - **Typography is identity.** The two custom fonts below are non-negotiable for Tim's brand. Do not substitute system fonts or Google Fonts.
 
 ## Global Preferences
@@ -37,8 +36,8 @@ The following is the color palette to use throughout:
 Note that while above points out suggested uses of these colors, you are welcome to use them whever you feel necessary.
 
 ### Fonts
-- [timh-title.woff2](./docs/fonts/timh-title.woff2) for major titles and workmarks.
-- [timh-text.woff2](./docs/fonts/timh-text.woff2) for everything else that is intended to be legible and readable.
+- [timh-title.woff2](./assets/fonts/timh-title.woff2) for major titles and workmarks.
+- [timh-text.woff2](./assets/fonts/timh-text.woff2) for everything else that is intended to be legible and readable.
 
 ```css
 @font-face
