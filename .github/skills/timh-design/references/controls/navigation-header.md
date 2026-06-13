@@ -1,4 +1,4 @@
-### Navigation Header
+# Navigation Header
 When placing a header at the very top of a page with multiple options, here is an example:
 
 ```css

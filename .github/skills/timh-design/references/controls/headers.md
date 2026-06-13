@@ -1,4 +1,4 @@
-### Major Header
+# Major Header
 For having particularly dramatic text such as a page title, word splash, or wordmark, have it front and center, such as:
 
 ```css

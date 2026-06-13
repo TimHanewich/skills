@@ -1,4 +1,4 @@
-### Console
+# Console
 If needing to have a console-like activity log, you can create one like so to show messages as they appear:
 
 ```css

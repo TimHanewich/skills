@@ -1,4 +1,4 @@
-### Button
+# Button
 If needing a button, use this:
 
 ```css
@@ -26,4 +26,3 @@ If needing a button, use this:
 ```html
 <a class="button" href="./">Example Button</a>
 ```
-

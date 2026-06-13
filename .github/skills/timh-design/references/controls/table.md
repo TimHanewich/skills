@@ -1,4 +1,4 @@
-### Table
+# Table
 For displaying rows of data such as query results or records, wrap the table in a `.table-wrap` (which provides the rounded border and hover accent) and a `.scroll` container so wide tables can scroll horizontally:
 
 ```css

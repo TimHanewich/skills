@@ -1,5 +1,5 @@
-### Text Input
-For collecting text input, use the following:
+# Input
+For collecting input (text box), use the following:
 
 ```css
 /* Form fields */

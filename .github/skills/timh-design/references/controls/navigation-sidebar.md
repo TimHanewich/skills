@@ -1,4 +1,4 @@
-### Sidebar Navigation
+# Navigation Sidebar
 If you'd like to have a sidebar navigation, here is an example of a left-hand one:
 
 ```css

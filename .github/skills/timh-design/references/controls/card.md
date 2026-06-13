@@ -1,4 +1,4 @@
-### Card
+# Card
 If you would like to have a card that contains information in it, use this:
 
 ```css
