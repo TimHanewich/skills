@@ -128,8 +128,8 @@ Always use a thin border width of `1px` unless otherwise truly necessary:
 }
 ```
 
-## Individual Elements
-You can use the design language described above to create whatever you want. For common elements, there are also guidelines you can use for each:
+## Individual Controls
+You can use the design language described above to create whatever you want. For common controls, there are also guidelines you can use for each:
 
 | Reference | Description |
 | - | - |
