@@ -13,7 +13,6 @@ The following is Tim Hanewich's ("TIMH") personal UI/UX design taste. If you are
 - **Clean and minimal.** No unnecessary decoration. Every element earns its place.
 - **Light by default.** Backgrounds are near-white, not pure white. Text is near-black, not pure black.
 - **Accents used sparingly.** The accent color is a soft steel blue. It appears on hover states and highlights, not as a background fill for entire sections.
-- **Typography is identity.** The two custom fonts below are non-negotiable for Tim's brand. Do not substitute system fonts or Google Fonts.
 
 ## Global Preferences
 The following design cues should be present across the entire site you make!
@@ -141,3 +140,5 @@ You can use the design language described above to create whatever you want. For
 | [navigation-header.md](./references/controls/navigation-header.md) | For a top-of-page navigation header with multiple options |
 | [navigation-sidebar.md](./references/controls/navigation-sidebar.md) | For left-hand sidebar navigation |
 | [table.md](./references/controls/table.md) | For displaying rows of data such as query results or records |
+
+If you are asked to build something that requires something *not* in that list (no example implementation), you can invent it yourself using the design styling described above!
