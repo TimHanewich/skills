@@ -140,5 +140,6 @@ You can use the design language described above to create whatever you want. For
 | [navigation-header.md](./references/controls/navigation-header.md) | For a top-of-page navigation header with multiple options |
 | [navigation-sidebar.md](./references/controls/navigation-sidebar.md) | For left-hand sidebar navigation |
 | [table.md](./references/controls/table.md) | For displaying rows of data such as query results or records |
+| [chat.md](./references/controls/chat.md) | For chat interfaces (e.g. chatbots, messaging) |
 
 If you are asked to build something that requires something *not* in that list (no example implementation), you can invent it yourself using the design styling described above!
